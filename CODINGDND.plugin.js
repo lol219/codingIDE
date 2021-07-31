@@ -188,7 +188,7 @@ module.exports = (() => {
                     github_username: "lol219",
                 },
             ],
-            version: "3.3.0",
+            version: "3.3.1",
             description: "This plugin will set the Do Not Disturb status when you open an IDE Continuedby Alex",
             github: "https://github.com/lol219/codingIDE/blob/main/CODINGDND.plugin.js",
             github_raw: "https://raw.githubusercontent.com/lol219/codingIDE/main/CODINGDND.plugin.js?token=AS5EK2FI5DEDUHZGLOSDF5TBAVP2Y",
