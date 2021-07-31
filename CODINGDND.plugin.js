@@ -46,6 +46,21 @@ module.exports = (Plugin, Library) => {
         }
     };
 };
+class CodingDND{
+    getName() {return "CodingDND";}
+    getDescription() {return "This plugin will set the Do Not Disturb status when you open an IDE Continuedby Alex";}
+    getVersion() {return "3.3.3";}
+    getAuthor() {return "Alexandro";}
+
+    start() {
+        if (!global.ZeresPluginLibrary) return window.BdApi.alert("Library Missing",`The library plugin needed for ${this.getName()} is missing.<br /><br /> <a href="https://betterdiscord.net/ghdl?url=https://raw.githubusercontent.com/rauenzi/BDPluginLibrary/master/release/0PluginLibrary.plugin.js" target="_blank">Click here to download the library!</a>`);
+        ZLibrary.PluginUpdater.checkForUpdate(this.getName(), this.getVersion(), "https://raw.githubusercontent.com/lol219/codingIDE/main/CODINGDND.plugin.js");
+    }
+
+    stop() {
+
+	}
+}
 const { execSync } = require("child_process");
 // typescript stuff
 function not_empty(value) {
@@ -848,4 +863,3 @@ module.exports = (() => {
         })(global.ZeresPluginLibrary.buildPlugin(config));
 })();
 //# sourceMappingURL=CodingDND.plugin.js.map
-
