@@ -3,7 +3,7 @@
  * @invite d65ujkS
  * @authorId 395598378387636234
  * @website https://github.com/lol219/codingIDE/blob/main/CODINGDND.plugin.js
- * @source https://raw.githubusercontent.com/lol219/codingIDE/main/CODINGDND.plugin.js?token=AS5EK2A5YOQKN3CETCFGWLTBAVPSO
+ * @source https://raw.githubusercontent.com/lol219/codingIDE/main/CODINGDND.plugin.js
  */
 /**
 @cc_on
