@@ -18,5 +18,5 @@
         {"title": "Improvements", "type": "improved", "items": ["Improvements to the base plugin"]},
         {"title": "On-going", "type": "progress", "items": ["More modals and popouts being added", "More classes and modules being added"]}
     ],
-    "main": "CODINGDND.plugin.js"
+    "main": "index.js"
 }
