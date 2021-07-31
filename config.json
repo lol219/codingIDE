@@ -10,7 +10,7 @@
         "version": "3.3.1",
         "description": "This plugin will set the Do Not Disturb status when you open an IDE Continuedby Alex",
         "github": "https://github.com/lol219/",
-        "github_raw": "https://raw.githubusercontent.com/lol219/codingIDE/main/CODINGDND.plugin.js?token=AS5EK2GLKGZL6TZ6JAEKQ63BAVRJI"
+        "github_raw": "https://raw.githubusercontent.com/lol219/codingIDE/main/CODINGDND.plugin.js"
     },
     "changelog": [
         {"title": "New Stuff", "items": ["Added more settings", "Added changelog"]},
