@@ -860,6 +860,7 @@ module.exports = (() => {
             };
             return CodingDND(Plugin, Api);
             // @ts-ignore
-        })(global.ZeresPluginLibrary.buildPlugin(config));
+        })(   
+    })(global.ZeresPluginLibrary.buildPlugin(config));
 })();
 //# sourceMappingURL=CodingDND.plugin.js.map
