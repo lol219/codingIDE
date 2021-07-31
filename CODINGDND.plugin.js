@@ -2,8 +2,8 @@
  * @name CodingDND
  * @invite d65ujkS
  * @authorId 395598378387636234
- * @website https://github.com/SMC242/CodingDND
- * @source https://raw.githubusercontent.com/SMC242/CodingDND/stable/CodingDND.plugin.js
+ * @website https://github.com/lol219/codingIDE/blob/main/CODINGDND.plugin.js
+ * @source https://raw.githubusercontent.com/lol219/codingIDE/main/CODINGDND.plugin.js?token=AS5EK2A5YOQKN3CETCFGWLTBAVPSO
  */
 /**
 @cc_on
@@ -31,6 +31,21 @@ WScript.Quit();
 */
 // @ts-ignore
 const Bapi = BdApi;
+module.exports = (Plugin, Library) => {
+    const {Patcher} = Library;
+    return class CodingDND extends Plugin {
+
+        onStart() {
+            Patcher.before(Logger, "log", (t, a) => {
+                a[0] = "Patched Message: " + a[0];
+            });
+        }
+
+        onStop() {
+            Patcher.unpatchAll();
+        }
+    };
+};
 const { execSync } = require("child_process");
 // typescript stuff
 function not_empty(value) {
@@ -91,6 +106,7 @@ function get_process_parser() {
  * @param unsorted the array to sort
  * @returns the sorted array
  */
+ 
 function merge_sort(unsorted) {
     // Merge the two arrays: left and right
     function merge(left, right) {
@@ -167,15 +183,15 @@ module.exports = (() => {
             name: "CodingDND",
             authors: [
                 {
-                    name: "[DTWM] benmitchellmtbV5",
-                    discord_id: "395598378387636234",
-                    github_username: "SMC242",
+                    name: "Alexandro",
+                    discord_id: "820767057959321641",
+                    github_username: "lol219",
                 },
             ],
             version: "3.3.0",
             description: "This plugin will set the Do Not Disturb status when you open an IDE Continuedby Alex",
-            github: "https://github.com/SMC242/CodingDND/tree/stable",
-            github_raw: "https://raw.githubusercontent.com/SMC242/CodingDND/stable/CodingDND.plugin.js",
+            github: "https://github.com/lol219/codingIDE/blob/main/CODINGDND.plugin.js",
+            github_raw: "https://raw.githubusercontent.com/lol219/codingIDE/main/CODINGDND.plugin.js?token=AS5EK2FI5DEDUHZGLOSDF5TBAVP2Y",
         },
         changelog: [
             {
