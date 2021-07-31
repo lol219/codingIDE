@@ -49,7 +49,7 @@ module.exports = (Plugin, Library) => {
 class CodingDND{
     getName() {return "CodingDND";}
     getDescription() {return "This plugin will set the Do Not Disturb status when you open an IDE Continuedby Alex";}
-    getVersion() {return "3.3.3";}
+    getVersion() {return "3.3.5";}
     getAuthor() {return "Alexandro";}
 
     start() {
