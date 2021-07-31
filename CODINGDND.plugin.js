@@ -201,6 +201,7 @@ module.exports = (() => {
                     name: "Alexandro",
                     discord_id: "820767057959321641",
                     github_username: "lol219",
+		    main:"index.js"
                 },
             ],
             version: "3.3.4",
