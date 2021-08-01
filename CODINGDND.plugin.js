@@ -183,7 +183,7 @@ const default_settings = {
             process_names: ["Code"],
             is_tracked: false,
         },
-	 "Sublime Text":{
+	 Sublime Text: {
 	    process_names:["sublime_text"],
 	    is_tracked: false,
 	},
