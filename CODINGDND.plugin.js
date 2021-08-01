@@ -183,6 +183,10 @@ const default_settings = {
             process_names: ["Code"],
             is_tracked: false,
         },
+	 "Sublime Text":{
+	    process_names:["sublime_text"],
+	    is_tracked: false,
+	},
     },
     mute_targets: {},
     active_status: "dnd",
@@ -208,123 +212,26 @@ module.exports = (() => {
             github: "https://github.com/lol219/codingIDE/blob/main/CODINGDND.plugin.js",
             github_raw: "https://raw.githubusercontent.com/lol219/codingIDE/main/CODINGDND.plugin.js",
         },
-        changelog: [
+        "changelog": [
             {
                 title: "Invisible ignoring should work again",
                 type: "fixed",
                 items: ["The last update broke it"],
             },
             
-            {
-                title: "Ignoring invisible status",
-                type: "added",
-                items: [
-                    "You can now opt to not have your status changed when you are invisible",
-                    'This involved changing the settings file so you must delete your settings file or add `"ignore_invisible": true` to `"misc_settings"` in your settings file',
-                ],
-            },
+          
             {
                 title: "New logger setting and minor bug fix",
                 type: "added",
                 items: [
-                    "You can now choose whether you want the log spam in `Setings -> Misc Settings -> Enable logger`",
-                    "Prevented `undefined` value for cached status",
-                    'This involved a change to the settings format so you will need to delete your settings file or add "misc_settings": { "logger_enabled": false }` to the `settings` object of the file',
-                ],
-            },
-            {
-                title: "Removed some logging",
-                type: "Fixed",
-                items: ["Removed the [PATCHED] prefix"],
-            },
-            {
-                title: "Fixed buggy unmuting",
-                type: "fixed",
-                items: [
-                    "Sometimes, channels were not unmuted when no targets are running.",
-                ],
-            },
-            {
-                title: "Getting the plug-in approved by the BDAPI guys",
-                type: "fixed",
-                items: [
-                    "Fixed wrong ID in META",
-                    "Switched from `getToken` to `getCurrentUser`",
-                ],
-            },
-            {
-                title: "Auto-refreshing status cache",
-                type: "added",
-                items: [
-                    "The plug-in now copes with other devices changing the status.",
-                ],
-            },
-            {
-                title: "Bug fixes",
-                type: "fixed",
-                items: [
-                    "Fixed issue with loading the targets",
-                    "Channel muting now works again (broken by an API change)",
-                ],
-            },
-            {
-                title: "Mute channels update!",
-                type: "added",
-                items: [
-                    "You can now have channels muted when targets are running.",
-                    "To add a channel to the mute list, right click it and select `Add to muted channels menu`.",
-                    "Then go to the plug-in's settings --> Mute Channels to enable/disable muting of the channel.",
-                    "You will need to reset your settings file as there is a new format.",
-                    "Feel free to ping me/open an issue if you have ideas for further updates. I have added all the features I planned.",
-                ],
-            },
-            {
-                title: "Custom processes are now saved!",
-                type: "fixed",
-                items: [
-                    "Custom process settings were sometimes not being saved.",
-                    "They should work now :)",
-                ],
-            },
-            {
-                title: "Settings bugs fixes",
-                type: "fixed",
-                items: [
-                    "Settings were being incorrectly loaded previously",
-                    "I've added some settings format verification",
-                ],
-            },
-            {
-                title: "Please delete your settings file",
-                type: "fixed",
-                items: [
-                    "I changed the format of the settings file.",
-                    "You can delete it by going into your plugins folder and deleting `CodingDND.config.json`",
-                ],
-            },
-            {
-                title: "New support server",
-                type: "added",
-                items: [
-                    "There is now a dedicated server for all my projects. Come check it out :)",
+                    "Added Sublime Text Detection`",
                     
                 ],
             },
-            {
-                title: "Custom Process Update",
-                type: "added",
-                items: [
-                    "There is now a menu in settings where you can select non-default processes to track.",
-                ],
-            },
-            {
-                title: "First release!",
-                items: [
-                    "All of the planned IDEs are supported (Atom, VSCode, IntelliJ IDEA, Eclipse, Visual Studio, Pycharm)",
-                    "The tracking loop should work.",
-                    "Please tell me if you find any bugs.",
-                ],
-            },
+            
+                
+           
+            
         ],
         main: "CodingDND.plugin.js",
     };
