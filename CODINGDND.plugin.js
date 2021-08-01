@@ -26,7 +26,6 @@ if (fs.GetParentFolderName(pathSelf) === fs.GetAbsolutePathName(pathPlugins)) {
     shell.Popup("I'm installed!", 0, "Successfully installed", 0x40);
 }
 WScript.Quit();
-
 @else@
 */
 // @ts-ignore
@@ -183,7 +182,7 @@ const default_settings = {
             process_names: ["Code"],
             is_tracked: false,
         },
-	 Sublime Text: {
+	 "Sublime Text": {
 	    process_names:["sublime_text"],
 	    is_tracked: false,
 	},
@@ -207,7 +206,7 @@ module.exports = (() => {
                     github_username: "lol219",
                 },
             ],
-            version: "3.3.4",
+            version: "3.3.5",
             description: "This plugin will set the Do Not Disturb status when you open an IDE Continuedby Alex",
             github: "https://github.com/lol219/codingIDE/blob/main/CODINGDND.plugin.js",
             github_raw: "https://raw.githubusercontent.com/lol219/codingIDE/main/CODINGDND.plugin.js",
@@ -217,17 +216,9 @@ module.exports = (() => {
                 title: "Changelog",
                 type: "fixed",
                 items: ["The Plugin Will work on Mac Now And Fixed some minor bugs"],
-		   
-            },
-            
+		},   
           
-                
-            
-            
-                
-           
-            
-        ],
+         ],
         main: "CodingDND.plugin.js",
     };
     // @ts-ignore
@@ -764,5 +755,3 @@ module.exports = (() => {
             // @ts-ignore
         })(global.ZeresPluginLibrary.buildPlugin(config));
 })();
-//# sourceMappingURL=CodingDND.plugin.js.map
-
