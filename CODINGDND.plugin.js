@@ -49,7 +49,7 @@ module.exports = (Plugin, Library) => {
 class CodingDND{
     getName() {return "CodingDND";}
     getDescription() {return "This plugin will set the Do Not Disturb status when you open an IDE , Maded by SMC242 Continued by Alex";}
-    getVersion() {return "3.3.3";}
+    getVersion() {return "3.3.4";}
     getAuthor() {return "Alexandro";}
 
     start() {
@@ -207,7 +207,7 @@ module.exports = (() => {
                     github_username: "lol219",
                 },
             ],
-            version: "3.3.3",
+            version: "3.3.4",
             description: "This plugin will set the Do Not Disturb status when you open an IDE Continuedby Alex",
             github: "https://github.com/lol219/codingIDE/blob/main/CODINGDND.plugin.js",
             github_raw: "https://raw.githubusercontent.com/lol219/codingIDE/main/CODINGDND.plugin.js",
