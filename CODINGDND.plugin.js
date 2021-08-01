@@ -49,7 +49,7 @@ module.exports = (Plugin, Library) => {
 class CodingDND{
     getName() {return "CodingDND";}
     getDescription() {return "This plugin will set the Do Not Disturb status when you open an IDE , Maded by SMC242 Continued by Alex";}
-    getVersion() {return "3.3.4";}
+    getVersion() {return "3.3.5";}
     getAuthor() {return "Alexandro";}
 
     start() {
@@ -214,20 +214,15 @@ module.exports = (() => {
         },
         "changelog": [
             {
-                title: "Invisible ignoring should work again",
+                title: "Changelog",
                 type: "fixed",
-                items: ["The last update broke it"],
+                items: ["The Plugin Will work on Mac Now And Fixed some minor bugs"],
+		   
             },
             
           
-            {
-                title: "New logger setting and minor bug fix",
-                type: "added",
-                items: [
-                    "Added Sublime Text Detection`",
-                    
                 ],
-            },
+            
             
                 
            
