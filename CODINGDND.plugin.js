@@ -48,7 +48,7 @@ module.exports = (Plugin, Library) => {
 class CodingDND{
     getName() {return "CodingDND";}
     getDescription() {return "This plugin will set the Do Not Disturb status when you open an IDE , Maded by SMC242 Continued by Alex";}
-    getVersion() {return "3.3.5";}
+    getVersion() {return "3.3.6";}
     getAuthor() {return "Alexandro";}
 
     start() {
@@ -186,6 +186,10 @@ const default_settings = {
 	    process_names:["sublime_text"],
 	    is_tracked: false,
 	},
+	"Typhon": {
+	    process_names:["typhon"],
+	    is_tracked: false,
+	},    
     },
     mute_targets: {},
     active_status: "dnd",
@@ -206,7 +210,7 @@ module.exports = (() => {
                     github_username: "lol219",
                 },
             ],
-            version: "3.3.5",
+            version: "3.3.6",
             description: "This plugin will set the Do Not Disturb status when you open an IDE Continuedby Alex",
             github: "https://github.com/lol219/codingIDE/blob/main/CODINGDND.plugin.js",
             github_raw: "https://raw.githubusercontent.com/lol219/codingIDE/main/CODINGDND.plugin.js",
@@ -214,8 +218,8 @@ module.exports = (() => {
         "changelog": [
             {
                 title: "Changelog",
-                type: "fixed",
-                items: ["The Plugin Will work on Mac Now And Fixed some minor bugs"],
+                type: "added",
+                items: ["Added Typhon Detection"],
 		},   
           
          ],
